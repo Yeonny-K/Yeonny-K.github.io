@@ -1,1 +1,129 @@
-"Hello World" 
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nanum+Gothic+Coding&family=Pacifico&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Licorice&family=Nanum+Gothic+Coding&family=Pacifico&display=swap" rel="stylesheet">    
+    <link href="https://fonts.googleapis.com/css2?family=Licorice&family=Nanum+Gothic+Coding&family=Nanum+Pen+Script&family=Pacifico&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Hahmlet:wght@100..900&family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Licorice&family=Nanum+Gothic+Coding&family=Nanum+Pen+Script&family=Pacifico&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Hahmlet&family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Licorice&family=Nanum+Gothic+Coding&family=Nanum+Pen+Script&family=Pacifico&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Hahmlet&family=Kanit:ital,wght@1,600&family=Lato&family=Licorice&family=Nanum+Gothic+Coding&family=Nanum+Pen+Script&family=Pacifico&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Hahmlet&family=Kanit:ital,wght@1,600&family=Lato&family=Licorice&family=Nanum+Gothic+Coding&family=Nanum+Pen+Script&family=Pacifico&family=Permanent+Marker&family=Shadows+Into+Light&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=East+Sea+Dokdo&family=Hahmlet&family=Kanit:ital,wght@1,600&family=Lato&family=Licorice&family=Nanum+Gothic+Coding&family=Nanum+Pen+Script&family=Pacifico&family=Permanent+Marker&family=Shadows+Into+Light&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Satisfy&display=swap" rel="stylesheet">
+    <title>Capital J</title>
+</head>
+<body>
+
+    <div class="container text-container">
+        <div class="left">
+            <div class="monthly-record">
+                <!--먼슬리-->
+                <h2 id="monthly" class="monthly-title pacifico-regular-small">
+                    <!-- 먼슬리 타이틀 -->
+                </h2>
+                <div id="monthly-form" class="monthly-list">
+                    <form>
+                        <input type="text" placeholder="Write a To Do and Press Enter" required>
+                    </form>
+                </div>
+                <ul id ="monthly-list" class="east-sea-dokdo">
+                    <!--todo list-->
+                </ul>
+            </div>
+        </div>
+
+        <div class="center">
+            <div class="fixed-memory">
+                <!--고정 기억-->
+                <h2 id="fixed" class="fixed-title pacifico-regular-small">Fix!
+                    <!-- 고정 기억 타이틀 -->
+                </h2>
+            <ul id="fixed-list" class="fixed-list-area east-sea-dokdo">
+
+            </ul>
+            </div>
+
+            <div class="title-box" style ="height: 45%;">
+                <div id="days" class="date kanit-semibold-italic">
+                    <!-- 날짜 -->
+                </div> 
+                
+                <div id="clock" class="time kanit-semibold-italic">
+                        <!-- 시계 -->
+                </div>
+                <div id="weather" class="weather-location kanit-semibold-italic-small">
+                        <span></span>
+                        <span></span>
+                        <!-- 날씨와 위치-->
+                </div>
+                
+                <h1 class="title pacifico-regular">Capital J
+                <!-- 타이틀 -->
+                </h1>
+                 <div id="login-form" class="login-form hidden pacifico-regular-small">
+                    <form>
+                        <input 
+                           required 
+                           maxlength="15" 
+                           type="text" 
+                           placeholder="What is your name?" />
+                           <input type="submit" value="Log In" />
+                       </form>
+                </div>
+                <h4 id="greeting" class="login-form hidden pacifico-regular-small"></h4>
+                <div id="todo-form" class="todo-list">
+                    <form>
+                        <input type="text" placeholder="Write a To Do and Press Enter" required>
+                    </form>
+                </div>
+            </div>
+
+            <div id="quote" class="quote satisfy-regular" style="overflow-y: auto; height: 15%;">
+                <span></span>
+                <span></span>
+            </div>
+            <ul id ="todo-list" class="todo-list-area east-sea-dokdo" style="overflow-y: auto; display: flex; flex-wrap: wrap;">
+                <!--todo list-->
+            </ul>
+        </div>
+
+        <div class="right">
+            <div class="weekly-record">
+                <!--위클리-->
+                <h2 id="weekly" class="weekly-title pacifico-regular-small">Weekly ToDo
+                    <!-- 위클리 타이틀 -->
+                </h2>
+                <div id="weekly-form" class="weekly-list">
+                    <form>
+                        <input type="text" placeholder="Write a To Do and Press Enter" required>
+                    </form>
+                </div>
+                <ul id ="weekly-list" class="east-sea-dokdo">
+                    <!--todo list-->
+                </ul>
+            </div>
+        </div>
+
+    </div>
+
+
+    <script src="js/geetings.js"></script>
+    <script src="js/clock.js"></script>
+    <script src="js/days.js"></script>
+    <script src="js/quotes.js"></script>
+    <script src="js/backgounds.js"></script>
+    <script src="js/todo.js"></script>
+    <script src="js/weather.js"></script>
+    <script src="js/monthly.js"></script>
+    <script src="js/fixed.js"></script>
+    <script src="js/weekly.js"></script>
+
+
+</body>
+
+</html>
